@@ -5,7 +5,7 @@ public class Soup {
 
     //this is a constructor it sets the instance variables (more on this later in the year)
     public Soup(){
-        letters ="";
+        letters ="abcdefghijklmnopqrstuvwxyz";
         company = "none";
     }
 
