@@ -19,6 +19,10 @@ public static void main(String [] args) {
 //	*************
 	int index = 1;
 	int p = 1;
+
+    while(index<rows){
+        index++;
+    }
 	
   
 }
@@ -35,9 +39,10 @@ public static void main(String [] args) {
 		
 		for(int i = 9; i>=1; i-=2) {
 			System.out.print(i);
-            for(int j = 0; j<= start/2; j++){
+            for(int j = 0; j<= start; j++){
                System.out.print(i);
             }
+            start = start -2;
 		}
 	}
 }
