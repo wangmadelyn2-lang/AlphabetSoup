@@ -6,7 +6,9 @@ public class  Driver {
 public static void main(String [] args) {
 	 Scanner scan = new Scanner(System.in);
 	 String input = scan.nextLine();
+     stars(4);
      odds(9);
+     
  }
 	public static void stars(int rows){
 //  *
@@ -18,12 +20,14 @@ public static void main(String [] args) {
 //	***********
 //	*************
 	int index = 1;
-	int p = 1;
-
-    while(index<rows){
-        index++;
-    }
 	
+for(int p=0;p<rows;p++){
+   for(int i=p;i<=rows;i++){
+       System.out.print("*");
+
+   }
+    System.out.println("");
+}
   
 }
 
@@ -39,10 +43,10 @@ public static void main(String [] args) {
 		
 		for(int i = 9; i>=1; i-=2) {
 			System.out.print(i);
-            for(int j = 0; j<= start; j++){
+            for(int j = i; j<= start; j++){
                System.out.print(i);
             }
-            start = start -2;
+           
 		}
 	}
 }
