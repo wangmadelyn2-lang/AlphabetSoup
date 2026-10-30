@@ -1,52 +1,50 @@
-import java.util.*;
 
-public class Driver {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        Soup mySoup = new Soup();
-        while (true) {
-            String input = scan.nextLine();
-            if (input.contains("add")) {
-                mySoup.add(input.replace("add ", ""));
-                System.out.println("new letters is " + mySoup.getLetters());
-            } 
-            
-            else if (input.contains("randomLetter")) {
-                System.out.println(mySoup.randomLetter());
-            } 
-            
-            else if (input.contains("centered")) {
-                System.out.println(mySoup.companyCentered());
-            } 
-            
-            else if (input.contains("company")) {
-                mySoup.setCompany(input.replace("company ", ""));
-            } 
-            
-            else if (input.contains("removeVowel")) {
-                mySoup.removeFirstVowel();
-                System.out.println("new letters is " + mySoup.getLetters());
-            } 
-            
-            else if (input.contains("removeSome")) {
-                mySoup.removeSome(Integer.parseInt(input.replace("removeSome ", "")));
-                System.out.println("new letters is " + mySoup.getLetters());
-            } 
-            
-            else if (input.contains("removeWord")) {
-                mySoup.removeWord(input.replace("removeWord ", ""));
-                System.out.println("new letters is " + mySoup.getLetters());
-            } 
-            
-            else if (input.contains("exit")) {
-                break;
-            }
+import java.util.Scanner;
+//Madelyn Wang
+//This program is a collection of methods that utilize loops to print out characters in rows
+public class  Driver {
+public static void main(String [] args) {
+	 Scanner scan = new Scanner(System.in);
+	 String input = scan.nextLine();
+     stars(4);
+ }
+	public static void stars(int rows){
+//  *
+//	***
+//	*****as
 
-            else{
-                System.out.println("not a legal command please try again!");
-            }
-        }
-        scan.close();
-    }
-
+//	*******
+//	*********
+//	***********
+//	*************
+	int index = 1;
+	int p = 1;
+	while(index<=rows) {
+		while(p<=13) {
+			System.out.print("*");
+		p=p+2;
+		
+		}
+        System.out.println("");
+		index++;
+		
+	}
 }
+	
+	public static void triangle(int rows){
+		int in = 1;
+		while(in < 10) {
+			
+		}
+	}
+	
+	public static void odds(int start){
+		
+		for(int i = 9; i>=1; i--) {
+			
+		}
+	}
+}
+
+
+
